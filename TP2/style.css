@@ -1,0 +1,122 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px;
+    margin: 0;
+}
+header{
+    background-color: darkgrey;
+    text-align:center;
+    height: 5ch;
+    border-radius: 15px;
+}
+h1{
+    color: white;
+    font-size: x-large;
+}
+hr{
+    border: 0;
+    border-top: 1px solid black;
+    margin: 0;
+}
+.parrafo_1{
+    text-align: justify;
+    text-decoration: underline;
+    text-transform: capitalize;
+    font-size: medium;
+}
+.blockquote_1{
+    margin: 10px;
+    background-color: rgb(221, 218, 218);
+    text-align: justify;
+    font-size: small;
+    font-style: italic;
+    border-left: 4px solid grey;
+    padding-left: 10px;
+}
+.caja1{
+    margin: 10px;
+    border: 3px solid grey;
+    box-shadow: 3px 3px 7px grey;
+    border-radius: 5%;
+    background-color: lightgray;
+    font-size: small;
+}
+.caja2{
+    margin: 10px;
+    border:  5px solid brown;
+    border-radius: 5px;
+    background-color: orange;
+    box-shadow: 5px 5px 10px black;
+    font-size: small;
+}
+.relativo{
+    position: relative;
+    border-radius: 5%;
+    background-color: lightblue;
+    font-size: small;
+    left:0;
+    top: 0;
+    padding: 5px;
+}
+.absoluto{
+    position: absolute;
+    border-radius: 5%;
+    background-color: blue;
+    font-size: small;
+    left: 50%;
+    top: 50%;;
+}
+.absolutorelativo{
+    padding-bottom: 50px;
+}
+@media screen and (max-width: 768px){
+body {
+    background-color: violet;
+}
+h1{
+    font-size: larger;
+}
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+}
+.grid-item{
+    background-color: rgb(133, 195, 216);
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: small;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+.animacion{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    transition: 1s;
+    margin-bottom: 30px;
+}
+.animacion:hover{
+    background-color: green;
+}
+.mover{
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    border-radius: 100%;
+    animation: movilizar 1s infinite;
+}
+@keyframes movilizar {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(100px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+    
+}
